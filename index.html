@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MAD CITY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hud">
+  <div class="brand">MAD CITY</div>
+  <div class="stats">
+    <span>💰 $<b id="money">0</b></span>
+    <span>⭐ <b id="score">0</b></span>
+    <span>📍 <b id="mission">Free Roam</b></span>
+  </div>
+</div>
+
+<div id="game">
+  <div id="city"></div>
+  <div id="player"></div>
+  <div id="car" class="hidden"></div>
+  <div id="coin1" class="coin">●</div>
+  <div id="coin2" class="coin">●</div>
+  <div id="missionPoint">!</div>
+</div>
+
+<div id="message">Use the controls to explore MAD CITY.</div>
+<div id="npcPanel">
+  <div class="npcName">👩 NPC — Asha</div>
+  <div class="heart">❤️ <span id="relationship">0</span>%</div>
+  <div class="npcActions">
+    <button id="talk">💬 Talk</button>
+    <button id="gift">🎁 Give Gift ($20)</button>
+    <button id="companion">🤝 Companion</button>
+  </div>
+</div>
+
+<div id="controls">
+  <button data-key="ArrowUp">▲</button>
+  <div>
+    <button data-key="ArrowLeft">◀</button>
+    <button id="action">🚗</button>
+    <button data-key="ArrowRight">▶</button>
+  </div>
+  <button data-key="ArrowDown">▼</button>
+</div>
+
+<div id="menu">
+  <button id="save">SAVE GAME</button>
+  <button id="load">LOAD GAME</button>
+  <button id="reset">NEW GAME</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
